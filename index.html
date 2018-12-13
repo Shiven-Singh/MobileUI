@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JoshTalk</title>
+
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,700'>
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+    <link href="https://unpkg.com/ionicons@4.4.8/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="mobile-wrap">
+        <div class="mobile clearfix">
+            <div class="header">
+                <span class="ion-ios-navicon move-left"><i></i></span>
+                <span class="title">Home</span>
+
+                <span class="ion-ios-search move-right"></span>
+                <div class="search">
+                    <form method="post">
+                        <input type="search" placeholder="Search Here">
+                    </form>
+                </div>
+                <div class="html homepage visible">
+                    <h4>#TrendingVideos</h4>
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+                        <style>
+
+                            .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  </style>
+
+
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="ricky-kharawala-10194-unsplash.jpg" width="1100" height="500">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="ricky-kharawala-10194-unsplash.jpg" width="1100" height="500">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="ricky-kharawala-10194-unsplash.jpg" width="1100" height="500">
+                            </div>
+                        </div>
+
+
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div class="details">
+                        <span class="name">To check more videos hit the menu icon and do complete your profile </span>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="sidebar">
+                <div class="sidebar-overlay"></div>
+                <div class="sidebar-content">
+                    <div class="top-head">
+                        <div class="name">User Name</div>
+                        <div class="abtuser">about user</div>
+                    </div>
+                    <div class="nav-left">
+                        <a href="#home"><span class="ion-ios-home-outline"></span> Home</a>
+                        <a href="#events"><span class="icon ion-md-calendar"></span> Events</a>
+                        <a href="#profile"><span class="icon ion-md-contact"></span> Profile</a>
+                        <a href="#video"><span class="icon ion-md-videocam"></span> Video</a>
+                        <a href="#about"><span class="ion-ios-person-outline"></span> About Us </a>
+                        <a href="#settings"><span class="ion-ios-gear-outline"></span> Settings</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="html search">
+                    <div class="title bounceInDown animated">Search Result</div>
+                    <p class="flipInX animated">Sorry,<br>no matches found for <b class="key"></b></p>
+                </div>
+                <div class="html events">
+                    <div class="events-list">
+                        <div class="note clearfix slideInRight animated">
+                            <div class="time move-left">
+                                <div class="hour">1</div>
+                                <div class="shift">pm</div>
+                            </div>
+                            <div class="details move-left">
+                                <div class="title">City</div>
+                                <div class="subject">Location</div>
+                            </div>
+                        </div>
+                        <div class="note clearfix slideInRight animated">
+                            <div class="time move-left">
+                                <div class="hour">1</div>
+                                <div class="shift">PM</div>
+                            </div>
+                            <div class="details move-left">
+                                <div class="title">City</div>
+                                <div class="subject">Location</div>
+                            </div>
+                        </div>
+
+                        <div class="note clearfix slideInRight animated" data-revert="slideOutRight">
+                            <div class="time move-left">
+                                <div class="hour">1</div>
+                                <div class="shift">PM</div>
+                            </div>
+                            <div class="details move-left">
+                                <div class="title">City</div>
+                                <div class="subject">Location</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="html profile">
+                    <div class="forms">
+                        <div class="group clearfix slideInRight animated">
+                            <label class="move-left" for="profile-title"><span class="ion-ios-paper-outline"></span> Name</label>
+                            <input class="move-right" id="profile-title" type="text">
+                        </div>
+                        <div class="group clearfix slideInLeft animated">
+
+                            <form action="#" class="icon ion-md-mail">
+                                E-mail: <input type="email" name="userid"><br>
+                            </form>
+                        </div>
+                        <div class="group clearfix slideInRight animated">
+                            <label class="move-left" for="profile-title"><span class="ion-ios-paper-outline"></span> Job</label>
+                            <input class="move-right" id="profile-title" type="text">
+                        </div>
+                        <div class="group clearfix slideInLeft animated">
+                            <label class="visible" for="profile-detail"><span class="ion-ios-list-outline"></span> Tell us about yourself</label>
+                            <textarea class="visible" id="profile-detail" rows="3"></textarea>
+                        </div>
+                        <div class="action flipInY animated">
+                            <button type="submit" action="#" class="btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="html video">
+                    <div class="tabs-list clearfix">
+                        <a href="#" class="tab active">Digital</a>
+                        <a href="#" class="tab">Technology</a>
+                        <a href="#" class="tab">Business</a>
+                        <a href="#" class="tab">Jobs</a>
+                    </div>
+                    <div class="active-users">
+                        <div class="user clearfix rotateInDownLeft animated">
+                            <div class="desc move-left">
+                                <video width="60" height="30" controls>
+                                    <source src="#" type="video/mp4">
+                                </video>
+                                <p class="name">Topic</p>
+                                <p class="position">speaker</p>
+                            </div>
+                        </div>
+                        <hr class="hori-line">
+                        <div class="desc move-left">
+                            <video width="60" height="30" controls>
+                                <source src="#" type="video/mp4">
+                            </video>
+                            <p class="name">Topic</p>
+                            <p class="position">speaker</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="html settings">
+                    <div class="setting-list">
+                        <div class="set clearfix slideInLeft animated">
+                            <div class="title move-left"><label for="set-notice">Notification</label></div>
+                            <div class="action move-right"><input id="set-notice" class="on-off" type="checkbox"><label for="set-notice"></label></div>
+                        </div>
+                        <div class="set clearfix slideInLeft animated">
+                            <div class="title move-left">Privacy</div>
+                            <div class="action move-right"><span class="ion-ios-arrow-right"></span></div>
+                        </div>
+                        <div class="set clearfix slideInLeft animated">
+                            <div class="title move-left">User setting</div>
+                            <div class="action move-right"><span class="ion-ios-arrow-right"></span></div>
+                        </div>
+                        <div class="set clearfix slideInLeft animated">
+                            <div class="title move-left">theme</div>
+                            <div class="action move-right"><span class="ion-ios-arrow-right"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="html about">
+                    <div class="photo">
+                        <img src="josh-talks_owler_20171115_113645_original.png">
+                    </div>
+                    <div class="details">
+                        <p class="heading flipInY animated">
+                            <span class="name">ABOUT JOSH TALKS</span>
+                        </p>
+                        <p class="text fadeInUp animated">What started as a simple conference back then is now a robust media platform that covers a wide array of subjects with speakers from every conceivable background, including entrepreneurship, public policy, sports, entertainment and social initiatives.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="#settings" class="nav-item nav-count-1"><i class="ion-ios-gear-outline"></i><span class="invisible">Settings</span></a>
+                <a href="#profile" class="nav-item nav-count-2"><i class="icon ion-md-contact"></i><span class="invisible">Profile</span></a>
+                <a href="#video" class="nav-item nav-count-3"><i class="icon ion-md-videocam"></i><span class="invisible">Video</span></a>
+                <a href="#events" class="nav-item nav-count-4"><i class="icon ion-md-calendar"></i><span class="invisible">Events</span></a>
+                <a href="#toggle" class="mask"><i class="ion-ios-plus-empty"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script>
+
+
+
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
